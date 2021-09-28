@@ -1,0 +1,21 @@
+:root{
+    /* Colors */
+    --mainColor:#FF013D;
+    --mainBlack:#111;
+    --mainWhite:#fff;
+
+    --smallTextColor:#ccc;
+    --headerColor:var(--mainWhite);
+    --subheaderColor:var(--mainColor);
+
+    --mainFontFamily:'Signika Negative', sans-serif;
+
+    --headerFontSize:48px;
+    --subheaderFontSize:20px;
+
+    --mainBorderRadius:3px;
+}
+
+.pinkText{
+    color: var(--mainColor);
+}

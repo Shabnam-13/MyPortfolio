@@ -1,0 +1,367 @@
+/* Navbar style */
+#myNav{
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#myNav .navbar .navbar-brand{
+    display: inline-block;
+    font-family: var(--mainFontFamily);
+    font-weight: 700;
+    font-size: 26px;
+}
+
+#myNav .navbar .navbar-brand, .navbar .navbar-brand:hover{
+    color: var(--mainWhite);
+}
+
+#myNav .navbar .navbar-toggler{
+    border: none;
+}
+
+#myNav .navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+
+#myNav .navbar .navbar-toggler span{
+    color: var(--mainWhite);
+}
+
+#myNav .navbar .navbar-collapse .navbar-nav .nav-item{
+    padding: 10px 15px;
+}
+
+#myNav .navbar .navbar-collapse .navbar-nav .nav-item .nav-link{
+    color: var(--mainWhite);
+    font-size: 15px;
+    font-family: var(--mainFontFamily);
+    font-weight: 500;
+    transition: color 0.3s linear;
+}
+
+#myNav .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover,#myNav .socNets ul li a:hover{
+    color: var(--mainColor);
+    transition: color 0.3s linear;
+}
+
+#myNav .socNets ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+#myNav .socNets ul li{
+    display: inline-block;
+    color: white;
+    font-size: 16px;
+    margin-right: 2rem;
+}
+
+#myNav .socNets ul li:last-child{
+    margin-right: 0;
+}
+
+#myNav .socNets ul li a{
+    color: var(--mainWhite);
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s linear;
+}
+
+/* Home style */
+#introHome{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+
+#introHome .homeContent h1{
+    font-family: var(--mainFontFamily);
+    font-size: 56px;
+    margin-bottom: 20px;
+    line-height: 66px;
+    letter-spacing: -1px;
+    color: var(--mainWhite);
+}
+
+#introHome .homeContent p{
+    font-size: 17px;
+    line-height: 1.7em;
+    margin-top: 0;
+    color: var(--mainWhite);
+    margin-bottom: 1.5rem;
+}
+
+#introHome .homeContent button{
+    background: var(--mainColor);
+    border: 1px solid var(--mainColor);
+    color: var(--mainWhite);
+    padding: 10px 30px;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+#introHome blockquote{
+    font-family: var(--mainFontFamily);
+    font-size: 26px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1.4em;
+    border: none;
+    border-left: solid 3px var(--mainColor);
+    color: var(--mainWhite);
+    padding-left: 30px;
+}
+
+.sectionPadding{
+    padding: 5rem 0px;
+    background: var(--mainBlack);
+    position: relative;
+}
+
+.closeSection{
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    cursor: pointer;
+}
+
+.closeSection div{
+    position: relative;
+    
+}
+
+.closeSection div:after{
+    position: absolute;
+    content: '';
+    background-color: var(--mainWhite);
+    height: 3.5rem;
+    width: 2px;
+    transform: rotate(45deg);
+}
+
+.closeSection div::before{
+    position: absolute;
+    content: '';
+    background-color: var(--mainWhite);
+    height: 3.5rem;
+    width: 2px;
+    transform: rotate(135deg);
+}
+
+/* Resume style */
+.education{
+    counter-reset: list;
+}
+
+.work{
+    counter-reset: list;
+}
+
+.infoHeader{
+    border: solid 3px rgba(255, 255, 255, .2);
+    padding: 10px 20px;
+    display: inline-block;
+    color: var(--mainWhite);
+    margin-bottom: 40px;
+}
+
+.infoHeader h2{
+    font-size: 32px;
+    font-family: var(--font-general);
+    font-weight: 600;
+}
+
+.resumeInfo .infoContent{
+    padding-left: 3rem;
+    position: relative;
+}
+
+.resumeInfo .infoContent:after{
+    content: "";
+    position: absolute;
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    left: 20px;
+    background: var(--mainColor);
+    top: 10px;
+}
+
+.resumeInfo .infoContent:last-child::after{
+    content: none;
+}
+
+.resumeInfo .infoContent::before{
+    counter-increment: list;
+    content: counter(list);
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: var(--mainColor);
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    left: 0;
+    top: -6px;
+    z-index: 2;
+    font-weight: 700;
+}
+
+.resumeInfo .infoContent span{
+    font-size: 14px;
+    color: var(--mainColor);
+    margin-bottom: 0.5rem;
+    display: inline-block;
+}
+.resumeInfo .infoContent h5{
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: block;
+    font-size: 20px;
+    color: var(--mainWhite);
+}
+
+.resumeInfo .infoContent h5 span{
+    display: inline-block;
+    font-weight: 400;
+    color: var(--mainColor);
+    font-size: 16px;
+}
+
+.resumeInfo .infoContent p{
+    color: #ccc;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7em;
+}
+
+/* Skills */
+.skillInfo .skillName{
+    display: flex;
+    justify-content: space-between;
+}
+
+.skillInfo .skillName h5{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.skillInfo .skillName .value{
+    font-size: 12px;
+    font-weight: 700;
+    color: #ccc;
+}
+
+.skillInfo .progress{
+    height: 10px;
+    background: rgba(255, 255, 255, .1);
+    border-radius: 3px;
+}
+
+.skillInfo .progress .progressBar{
+    background-color: var(--mainColor);
+}
+
+
+/* Global styles */
+/* Section header */
+.sectionHeader{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.sectionHeader h3{
+    font-size: 20px;
+    color: var(--mainColor);
+    font-weight: 400;
+}
+
+.sectionHeader h1{
+    text-align: center;
+    font-size: 48px;
+    line-height: 1.2em;
+    padding-bottom: 25px;
+    color: var(--mainWhite);
+    position: relative;
+}
+
+.sectionHeader h1::before{
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 2px;
+    background: var(--mainColor);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slideBg{
+    height: 100vh;
+    top:0; 
+    position: absolute;
+    background-color: var(--mainColor);
+    display: none;
+    z-index: 9;
+}
+
+.slideRight{
+    display: block;
+    width: 100%;
+    transform: translateX(-100%);
+    animation: slideAnimationRight 1.5s 1 ease-in-out;
+}
+
+.slideLeft{
+    display: block;
+    width: 100%;
+    transform: translateX(100%);
+    animation: slideAnimationLeft 1.5s 1 ease-in-out;
+}
+
+/* Animoations */
+@keyframes slideAnimationRight{
+    100%{transform:translateX(100%);}
+}
+
+@keyframes slideAnimationLeft{
+    100%{transform:translateX(-100%);}
+}
+
+@media (min-width: 992px){
+    #myNav .navbar-expand-lg .navbar-collapse {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 991px){
+    #myNav {
+        background-color: var(--mainBlack);
+        padding: 10px;
+        position: relative;
+    }
+
+    #myNav .navbar .navbar-collapse .navbar-nav .nav-item{
+        padding: 10px 0;
+        border-bottom: solid 1px rgba(255, 255, 255, .05);
+    }
+
+    #myNav .navbar .navbar-collapse .navbar-nav .nav-item:last-child{
+        border-bottom: unset;
+    }
+
+    #myNav .socNets{
+        display: none;
+    }
+}
