@@ -76,7 +76,7 @@
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top;
     display: flex;
     justify-content: center;
 }
@@ -124,36 +124,34 @@
     padding: 5rem 0px;
     background: var(--mainBlack);
     position: relative;
+    min-height: 100vh;
 }
 
 .closeSection{
     position: absolute;
-    top: 2rem;
-    right: 3rem;
+    top: 1rem;
+    right: 1.5rem;
     cursor: pointer;
+    width: 50px;
+    height: 50px;
 }
 
-.closeSection div{
-    position: relative;
-    
-}
-
-.closeSection div:after{
+.closeSection .lineLeft{
     position: absolute;
-    content: '';
     background-color: var(--mainWhite);
-    height: 3.5rem;
-    width: 2px;
+    height: 2px;
+    width: 50px;
     transform: rotate(45deg);
+    top: 25px;
 }
 
-.closeSection div::before{
+.closeSection .lineRight{
     position: absolute;
-    content: '';
     background-color: var(--mainWhite);
-    height: 3.5rem;
-    width: 2px;
+    height: 2px;
+    width: 50px;
     transform: rotate(135deg);
+    top: 25px;
 }
 
 /* Resume style */
@@ -273,9 +271,184 @@
     background-color: var(--mainColor);
 }
 
+/* About */
+.aboutImg{
+    position: relative;
+}
+
+.aboutImg .mainImg{
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.aboutImg .mainImg img{
+    max-width: 100%;
+    transition: transform 1s linear;
+}
+
+.aboutImg .subImg{
+    border-radius: 3px;
+    overflow: hidden;
+    position: absolute;
+    bottom: -12%;
+    width: 40%;
+    height: 40%;
+    right: -10%;
+}
+
+.aboutImg .subImg img{
+    max-width: 100%;  
+    transition: all .5s ease-in;
+}
+
+.aboutImg img:hover{
+    transform: scale(1.1);
+    transition: all .5s ease-in;
+}
+
+.aboutMe .aboutContent h2{
+    font-size: 40px;
+    color: var(--mainWhite);
+    margin-bottom: 1rem;
+}
+
+.aboutMe .aboutContent p{
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #ccc;
+}
+
+.aboutMe .aboutContent ul{
+    padding: 0;
+    margin: 0;
+}
+
+.aboutMe .aboutContent ul li{
+    color: white;
+    list-style: none;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.aboutMe .aboutContent ul li span:first-child{
+    margin-right: 5px;
+}
+
+.service .serviceInfo{
+    /* display: flex; */
+    text-align: center;
+}
+
+.service .serviceInfo .icon{
+    font-size: 36px;
+    /* margin-right: 1.5rem; */
+    margin-bottom: 1rem;
+}
+
+.service .serviceInfo .serviceContent h5{
+    color: var(--mainWhite);
+    font-size: 19px;
+}
+
+.service .serviceInfo .serviceContent p{
+    font-size: 16px;
+    color: #ccc;
+}
+
+/* Portfolio */
+.projectTitle{
+    text-align: center;
+}
+
+.projectTitle ul{
+    padding: 0;
+    margin: 0;
+}
+
+.projectTitle ul li{
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 3px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.projectTitle ul li.active{
+    background: var(--mainColor);
+}
+
+.projectTitle ul li.active a{
+    color: var(--mainWhite);
+}
+
+.projectTitle ul li a{
+    text-decoration: none;
+    color: #888;
+}
+
+.project a{
+    display: inline-block;
+    position: relative;
+    transition: all 0.3s linear;
+    border-radius: 3px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.project a::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0, .7);
+    transition: all 0.3s linear;
+    opacity: 0;
+    z-index: 1;
+}
+
+.project a img{
+    max-width: 100%; 
+    transition: all 0.3s linear;
+    object-fit: cover;
+}
+
+.project:hover a img{
+    transform: scale(1.1);
+    transition: all 0.3s linear;
+}
+
+.project a span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    color: white;
+    transition: all 0.3s linear;
+    opacity: 0;
+    z-index: 2;
+    font-weight: 500;
+}
+
+.project a:hover span,.project a:hover::before{
+    opacity: 1;
+    transition: all 0.3s linear;
+}
 
 /* Global styles */
 /* Section header */
+.loader::before{
+    position: absolute;
+    content: "";
+}
+
+.loader::after{
+    position: absolute;
+    content: "";
+}
+
 .sectionHeader{
     text-align: center;
     padding-bottom: 50px;
@@ -294,6 +467,7 @@
     padding-bottom: 25px;
     color: var(--mainWhite);
     position: relative;
+    text-transform: capitalize;
 }
 
 .sectionHeader h1::before{
@@ -329,6 +503,50 @@
     transform: translateX(100%);
     animation: slideAnimationLeft 1.5s 1 ease-in-out;
 }
+/* Loader */
+.loader{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--mainBlack);
+    position: relative;
+}
+
+.lds-ripple {
+    display: inline-block;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .lds-ripple div {
+    position: absolute;
+    border: 4px solid var(--mainColor);
+    opacity: 1;
+    border-radius: 50%;
+    animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  }
+  .lds-ripple div:nth-child(2) {
+    animation-delay: -0.5s;
+  }
+  @keyframes lds-ripple {
+    0% {
+      top: 36px;
+      left: 36px;
+      width: 0;
+      height: 0;
+      opacity: 1;
+    }
+    100% {
+      top: 0px;
+      left: 0px;
+      width: 72px;
+      height: 72px;
+      opacity: 0;
+    }
+  }
+  
 
 /* Animoations */
 @keyframes slideAnimationRight{
@@ -363,5 +581,9 @@
 
     #myNav .socNets{
         display: none;
+    }
+
+    #about .container{
+        padding: 0 50px;
     }
 }
