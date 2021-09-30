@@ -16,291 +16,436 @@
 </head>
 <body>
 
-<div id="home" class="sections">
-  <header>
-    <div id="myNav">
+<div class="mainPage">
+  <div id="home" class="sections">
+    <header>
+      <div id="myNav">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid p-0">
+                  <a class="navbar-brand" href="#">SH</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="fas fa-bars"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#resume">Resume</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#about">About Me</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                      </li>
+                      <!-- <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                          </li> -->
+                    </ul>
+                  </div>
+                  <div class="socNets">
+                    <ul>
+                      <li><a href="https://www.facebook.com/profile.php?id=100008364901276">
+                        <i class="fab fa-facebook-f"></i></a></li>
+                      <li><a href="https://www.linkedin.com/in/shabnam-h-5b650b20a/">
+                        <i class="fab fa-linkedin-in"></i></a></li>
+                      <li><a href="https://github.com/Shabnam-13">
+                        <i class="fab fa-github-alt"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="introHome" style="background-image: url('image/banner.jpg')">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <nav class="navbar navbar-expand-lg navbar-light">
-              <div class="container-fluid p-0">
-                <a class="navbar-brand" href="#">SH</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                  aria-label="Toggle navigation">
-                  <span class="fas fa-bars"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="#resume">Resume</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link active" href="#about">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="socNets">
-                  <ul>
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li><a href="#"><i class="fab fa-github-alt"></i></a></li>
-                  </ul>
-                </div>
+        <div class="row h-100 align-items-center">
+          <div class="col-sm-6">
+            <div class="homeContent">
+              <h1>I'm <span class="pinkText">Shabnam</span> Hasanli</h1>
+              <p>Front End Developer</p>
+              <button>Download CV</button>
+            </div>
+          </div>
+          <div class="col-sm-6 d-flex justify-content-end">
+            <div class="homeQuote">
+              <blockquote>Be creative and have fun!</blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section id="resume" class="sections sectionPadding d-none">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="sectionHeader">
+            <h3>I'm avaible for hire</h3>
+            <h1>My resume</h1>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 education mb-3">
+          <div class="resumeInfo">
+            <div class="infoHeader">
+              <h2>Education</h2>
+            </div>
+            <div class="infoContent">
+              <span>Nov 2019 - Sep 2020</span>
+              <h5>Code Academy</h5>
+              <p>Programming</p>
+            </div>
+            <div class="infoContent">
+              <span>Sep 2017 - Jun 2019</span>
+              <h5>Azerbaijen State Economic University</h5>
+              <p>Computer sciences</p>
+            </div>
+            <div class="infoContent">
+              <span>Sep 2013 - Jun 2017</span>
+              <h5>Azerbaijen State Pedagogical University</h5>
+              <p>Mathematics and Informatics</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 work mb-3">
+          <div class="resumeInfo">
+            <div class="infoHeader">
+              <h2>Work Experiences</h2>
+            </div>
+            <div class="infoContent">
+              <span>Nov 2020 - Now</span>
+              <h5>TIM Consulting <span> - Front End Developer</span></h5>
+              <p>Blazor, DevExpress, HTML, CSS, Bootstrap</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 mt-5 b-3">
+          <div class="infoHeader">
+            <h2>Programming Skills</h2>
+          </div>
+        </div>
+        <!-- <div class="col-lg-6 col-md-6 mb-3">
+          <div class="skills">
+            <div class="skillInfo mb-4">
+              <div class="skillName">
+                <h5>HTML & CSS(SCSS)</h5>
+                <div class="value">80%</div>
               </div>
-            </nav>
+              <div class="progress">
+                <div class="progressBar" style="width: 80%;"></div>
+              </div>
+            </div>
+            <div class="skillInfo mb-4">
+              <div class="skillName">
+                <h5>Javascript & jQuery</h5>
+                <div class="value">70%</div>
+              </div>
+              <div class="progress">
+                <div class="progressBar" style="width: 70%;"></div>
+              </div>
+            </div>
+            <div class="skillInfo mb-4">
+              <div class="skillName">
+                <h5>C#</h5>
+                <div class="value">40%</div>
+              </div>
+              <div class="progress">
+                <div class="progressBar" style="width: 40%;"></div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <div class="col-lg-3 col-md-4 mb-3">
+          <div class="service">
+            <div class="serviceInfo">
+              <div class="icon pinkText">
+                <i class="fab fa-html5"></i>
+              </div>
+              <div class="serviceContent">
+                <h5>HTML</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mb-3">
+          <div class="service">
+            <div class="serviceInfo">
+              <div class="icon pinkText">
+                <i class="fab fa-css3-alt"></i>
+              </div>
+              <div class="serviceContent">
+                <h5>CSS</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mb-3">
+          <div class="service">
+            <div class="serviceInfo">
+              <div class="icon pinkText">
+                <i class="fab fa-sass"></i>
+              </div>
+              <div class="serviceContent">
+                <h5>SCSS</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mb-3">
+          <div class="service">
+            <div class="serviceInfo">
+              <div class="icon pinkText">
+                <i class="fab fa-js-square"></i>
+              </div>
+              <div class="serviceContent">
+                <h5>Javascript/jQuery</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mb-3">
+          <div class="service">
+            <div class="serviceInfo">
+              <div class="icon pinkText">
+                <i class="fas fa-code"></i>
+              </div>
+              <div class="serviceContent">
+                <h5>C#/.NET MVC</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mb-3">
+          <div class="service">
+            <div class="serviceInfo">
+              <div class="icon pinkText">
+                <i class="fas fa-database"></i>
+              </div>
+              <div class="serviceContent">
+                <h5>ADO.NET/EF</h4>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </header>
-
-  <section id="introHome" style="background-image: url('image/banner.jpg')">
-    <div class="container">
-      <div class="row h-100 align-items-center">
-        <div class="col-sm-6">
-          <div class="homeContent">
-            <h1>I'm <span class="pinkText">Shabnam</span> Hasanli</h1>
-            <p>Front End Developer</p>
-            <button>Download CV</button>
-          </div>
-        </div>
-        <div class="col-sm-6 d-flex justify-content-end">
-          <div class="homeQuote">
-            <blockquote>Be creative and have fun!</blockquote>
-          </div>
-        </div>
-      </div>
+    <div class="closeSection">
+      <div class="lineLeft"></div>
+      <div class="lineRight"></div>
     </div>
   </section>
+
+  <section id="about" class="sections sectionPadding d-none">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="sectionHeader">
+            <h3>Who I Am</h3>
+            <h1>About me</h1>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 education mb-5">
+          <div class="aboutImg">
+            <div class="mainImg">
+              <a href="#">
+                <img src="image/1.jpg" alt="About image">
+              </a>
+            </div>
+            <div class="subImg">
+              <a href="#">
+                <img src="image/2.jpg" alt="About image">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-12 work mb-3 offset-lg-1">
+          <div class="aboutMe">
+            <div class="aboutContent">
+              <h2>Hello, I'm <span class="pinkText">Shabnam Hasanli</span></h2>
+              <p>I have 10 month experience. I am always eager to learn new skills. I'm currently learning full 
+                stask development. I have experience working as part of a team. Looking for a immediate start and 
+                to join a busy and successful team where I can fulfill my potential and futher advance career.</p>
+              <ul>
+                <li>
+                  <span class="pinkText">Residence</span>
+                  <span>Azerbaijan</span>
+                </li>
+                <li>
+                  <span class="pinkText">Address</span>
+                  <span>Izzat Hamidov st. 25, Baku</span>
+                </li>
+                <li>
+                  <span class="pinkText">Email</span>
+                  <span>shabnamahasanli@gmail.com</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 mt-5 mb-3">
+          <div class="infoHeader">
+            <h2>My services</h2>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-3">
+          <div class="service">
+            <div class="serviceInfo">
+              <div class="icon pinkText">
+                <i class="fas fa-laptop"></i>
+              </div>
+              <div class="serviceContent">
+                <h5>Website Design</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-3">
+          <div class="service">
+            <div class="serviceInfo">
+              <div class="icon pinkText">
+                <i class="fas fa-tablet-alt"></i>
+              </div>
+              <div class="serviceContent">
+                <h5>Responsive Design</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-3">
+          <div class="service">
+            <div class="serviceInfo">
+              <div class="icon pinkText">
+                <i class="far fa-comments"></i>
+              </div>
+              <div class="serviceContent">
+                <h5>IT Consultancy</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="closeSection">
+      <div class="lineLeft"></div>
+      <div class="lineRight"></div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="sections sectionPadding d-none">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="sectionHeader">
+            <h3>Showcase of my best works</h3>
+            <h1>My Portfolio</h1>
+          </div>
+        </div>
+        <div class="col-lg-12 mb-5">
+          <div class="projectTitle">
+            <ul>
+              <li class="active"><a href="#allProjects">all projects</a></li>
+              <li><a href="#dashboard">dashboard</a></li>
+              <li><a href="#eCommerce">e-commerce</a></li>
+              <li><a href="#other">other</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-3 project" id="other">
+          <div>
+            <a href="https://shabnam-13.github.io/HotelSite/">
+              <img src="image/pr-hotel.jpg" alt="Portfolio image" width="100%" height="280px">
+              <span>Avana hotel</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-3 project" id="eCommerce">
+          <div>
+            <a href="https://shabnam-13.github.io/ShoppingSite/">
+              <img src="image/shopwise.jpg" alt="Portfolio image" width="100%" height="280px">
+              <span>Shopwise e-commerce</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-3 project" id="other">
+          <div>
+            <a href="https://shabnam-13.github.io/DirctList/">
+              <img src="image/directlist.jpg" alt="Portfolio image" width="100%" height="280px">
+              <span>Directlist restourant</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-3 project" id="other">
+          <div>
+            <a href="https://shabnam-13.github.io/Glint./">
+              <img src="image/glint.jpg" alt="Portfolio image" width="100%" height="280px">
+              <span>Glint. restourant</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-3 project" id="dashboard">
+          <div>
+            <a href="https://shabnam-13.github.io/Dashboard/">
+              <img src="image/dashboard.jpg" alt="Portfolio image" width="100%" height="280px">
+              <span>Dastone dashboard</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="closeSection">
+      <div class="lineLeft"></div>
+      <div class="lineRight"></div>
+    </div>
+  </section>
+
+  <!-- <section id="contact" class="sections sectionPadding d-none">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="sectionHeader">
+                <h3>I'm avaible for hire</h3>
+                <h1>Contact me</h1>
+              </div>
+            </div>
+            <div class="col-md-12 mb-3">
+              <div class="messageForm">
+                <div class="row">
+                  <form action="">
+                    <div class="col-lg-6">
+      
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="closeSection">
+          <div></div>
+        </div>
+      </section> -->
+
+  <div class="slideBg"></div>
 </div>
 
-<section id="resume" class="sections sectionPadding d-none">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="sectionHeader">
-          <h3>I'm avaible for hire</h3>
-          <h1>My resume</h1>
-        </div>
-      </div>
-      <div class="col-lg-6 col-md-6 education mb-3">
-        <div class="resumeInfo">
-          <div class="infoHeader">
-            <h2>Education</h2>
-          </div>
-          <div class="infoContent">
-            <span>Nov 2019 - Sep 2020</span>
-            <h5>Code Academy</h5>
-            <p>Programming</p>
-          </div>
-          <div class="infoContent">
-            <span>Sep 2017 - Jun 2019</span>
-            <h5>Azerbaijen State Economic University</h5>
-            <p>Computer sciences</p>
-          </div>
-          <div class="infoContent">
-            <span>Sep 2013 - Jun 2017</span>
-            <h5>Azerbaijen State Pedagogical University</h5>
-            <p>Mathematics and Informatics</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6 col-md-6 work mb-3">
-        <div class="resumeInfo">
-          <div class="infoHeader">
-            <h2>Work Experiences</h2>
-          </div>
-          <div class="infoContent">
-            <span>Nov 2020 - Now</span>
-            <h5>TIM Consulting</h5>
-            <p>Front End Developer</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-12 mt-5 b-3">
-        <div class="infoHeader">
-          <h2>Programming Skills</h2>
-        </div>
-      </div>
-      <div class="col-lg-6 col-md-6 mb-3">
-        <div class="skills">
-          <div class="skillInfo mb-4">
-            <div class="skillName">
-              <h5>HTML & CSS(SCSS)</h5>
-              <div class="value">80%</div>
-            </div>
-            <div class="progress">
-              <div class="progressBar" style="width: 80%;"></div>
-            </div>
-          </div>
-          <div class="skillInfo mb-4">
-            <div class="skillName">
-              <h5>Javascript & jQuery</h5>
-              <div class="value">70%</div>
-            </div>
-            <div class="progress">
-              <div class="progressBar" style="width: 70%;"></div>
-            </div>
-          </div>
-          <div class="skillInfo mb-4">
-            <div class="skillName">
-              <h5>C#</h5>
-              <div class="value">40%</div>
-            </div>
-            <div class="progress">
-              <div class="progressBar" style="width: 40%;"></div>
-            </div>
-          </div>
-        </div>
-      </div>
+<div class="loader d-none">
+  <div class="lds-ripple"><div></div><div></div></div>
+</div>
 
-      <div class="col-lg-6 col-md-6 mb-3">
-        <div class="skills">
-          <div class="skillInfo mb-4">
-            <div class="skillName">
-              <h5>HTML & CSS(SCSS)</h5>
-              <div class="value">80%</div>
-            </div>
-            <div class="progress">
-              <div class="progressBar" style="width: 80%;"></div>
-            </div>
-          </div>
-          <div class="skillInfo mb-4">
-            <div class="skillName">
-              <h5>Javascript & jQuery</h5>
-              <div class="value">70%</div>
-            </div>
-            <div class="progress">
-              <div class="progressBar" style="width: 70%;"></div>
-            </div>
-          </div>
-          <div class="skillInfo mb-4">
-            <div class="skillName">
-              <h5>C#</h5>
-              <div class="value">40%</div>
-            </div>
-            <div class="progress">
-              <div class="progressBar" style="width: 40%;"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="closeSection">
-    <div></div>
-  </div>
-</section>
-
-
-<section id="about" class="sections sectionPadding d-none">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="sectionHeader">
-          <h3>Who I Am</h3>
-          <h1>About me</h1>
-        </div>
-      </div>
-      <div class="col-lg-6 col-md-6 education mb-3">
-        <div class="aboutImg">
-        </div>
-      </div>
-      <div class="col-lg-6 col-md-6 work mb-3">
-        <div class="aboutMe">
-          <div class="aboutHeader">
-            <h2>Hello, I'm <span class="pinkText">Shabnam Hasanli</span></h2>
-          </div>
-          <div class="aboutContent">
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti
-            quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia
-            deserunt mollitia animi, id est laborum et dolorum fuga. Veniam dolore qui sunt dolor anim est proident culpa.
-          </div>
-          <div class="aboutInfo">
-            <div>
-              <span class="pinkText">Age</span>
-              <span>25</span>
-            </div>
-            <div>
-              <span class="pinkText">Residence</span>
-              <span>Azerbaijan</span>
-            </div>
-            <div>
-              <span class="pinkText">Address</span>
-              <span>Izzat Hamidov 25</span>
-            </div>
-            <div>
-              <span class="pinkText">Email</span>
-              <span>shabnamahasanli@gmail.com</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-12 mt-5 b-3">
-        <div class="infoHeader">
-          <h2>My services</h2>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 mb-3">
-        <div class="service">
-          <div class="serviceInfo">
-            <div class="icon">
-            </div>
-            <div class="serviceContent">
-              <h5>Website Design</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam odit eaque ducimus architecto impedit rerum quas est
-                  optio! Vel esse ducimus dicta atque accusantium iusto nostrum voluptatem at ut! Sit?</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="closeSection">
-    <div></div>
-  </div>
-</section>
-
-<section id="portfolio" class="sections sectionPadding d-none">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="sectionHeader">
-          <h3>Showcase of my best works</h3>
-          <h1>My Portfolio</h1>
-        </div>
-      </div>
-      <div class="col-lg-12 mb-3">
-        <ul>
-          <li><a href="#">all projects</a></li>
-          <li><a href="#">mobile</a></li>
-          <li><a href="#">all projects</a></li>
-        </ul>
-      </div>
-      <div class="col-lg-4 col-md-6 mb-3">
-        <div class="portfolio">
-          <div class="portfolioImg">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="closeSection">
-    <div></div>
-  </div>
-</section>
-
-<div class="slideBg"></div>
-
-    
-<script src="js/main.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <!-- file:///D:/BlazorPractise/new-master/index.html -->
+  <!-- https://www.designesia.com/themes/jordis/index.html#section-about -->
+  <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
 </html>
