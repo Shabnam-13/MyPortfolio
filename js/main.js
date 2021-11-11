@@ -18,10 +18,6 @@ var closeBtn = document.querySelectorAll(".closeSection");
 links.forEach(link => {
   link.addEventListener('click',function(e){
     document.onreadystatechange = function() {
-  if (document.readyState !== "complete") {
-    document.querySelector(".mainPage").classList.add('d-none');
-      document.querySelector(".loader").classList.remove('d-none');
-  } else {
     e.preventDefault();
     var nav = link.getAttribute('href').slice(1);
     for(var i = 0; i < sections.length; i++){
@@ -40,7 +36,6 @@ links.forEach(link => {
           return;
       }
     }
-  }
   })
 });
 
