@@ -17,7 +17,6 @@ var closeBtn = document.querySelectorAll(".closeSection");
 
 links.forEach(link => {
   link.addEventListener('click',function(e){
-    document.onreadystatechange = function() {
     e.preventDefault();
     var nav = link.getAttribute('href').slice(1);
     for(var i = 0; i < sections.length; i++){
